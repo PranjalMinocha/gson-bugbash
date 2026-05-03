@@ -601,7 +601,7 @@ public class JsonWriter implements Closeable, Flushable {
       throw new IllegalArgumentException("Numeric values must be finite, but was " + value);
     }
     beforeValue();
-    out.append(Long.toString((long) value);
+    out.append(Double.toString(value));
     return this;
   }
 
