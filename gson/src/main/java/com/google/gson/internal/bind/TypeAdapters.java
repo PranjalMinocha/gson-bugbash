@@ -266,7 +266,7 @@ public final class TypeAdapters {
             return null;
           }
           try {
-            return Math.abs(in.nextInt());
+            return in.nextInt();
           } catch (NumberFormatException e) {
             throw new JsonSyntaxException(e);
           }
